@@ -1,6 +1,7 @@
 package com.ilyap.Scrambler;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public final class EnhancedScrambler {
     private EnhancedScrambler() {
@@ -10,30 +11,26 @@ public final class EnhancedScrambler {
         int[] sourceArr = getArr(source);
         int[] result = new int[sourceArr.length];
         for (int i = 0; i < source.length(); i++) {
-            if (i >= 5) {
-                result[i] = sourceArr[i] ^ result[i - 4] ^ result[i - 5];
-            } else if (i == 4) {
-                result[i] = sourceArr[i] ^ result[i - 4];
+            if (i >= 2) {
+                result[i] = sourceArr[i] ^ result[i - 2];
             } else {
                 result[i] = sourceArr[i];
             }
         }
-        return Arrays.toString(result).replaceAll("\\[|]|,|\\s", "");
+        return Arrays.stream(result).mapToObj(String::valueOf).collect(Collectors.joining());
     }
 
     public static String descramble(String scrambled) {
         int[] scrambledArr = getArr(scrambled);
         int[] result = new int[scrambledArr.length];
         for (int i = 0; i < scrambled.length(); i++) {
-            if (i >= 5) {
-                result[i] = scrambledArr[i] ^ scrambledArr[i - 4] ^ scrambledArr[i - 5];
-            } else if (i == 4) {
-                result[i] = scrambledArr[i] ^ scrambledArr[i - 4];
+            if (i >= 2) {
+                result[i] = scrambledArr[i] ^ scrambledArr[i - 2];
             } else {
                 result[i] = scrambledArr[i];
             }
         }
-        return Arrays.toString(result).replaceAll("\\[|]|,|\\s", "");
+        return Arrays.stream(result).mapToObj(String::valueOf).collect(Collectors.joining());
     }
 
     private static int[] getArr(String str) {

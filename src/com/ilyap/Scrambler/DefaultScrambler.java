@@ -1,6 +1,7 @@
 package com.ilyap.Scrambler;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public final class DefaultScrambler {
     private DefaultScrambler() {
@@ -18,7 +19,7 @@ public final class DefaultScrambler {
                 result[i] = sourceArr[i];
             }
         }
-        return Arrays.toString(result).replaceAll("\\[|]|,|\\s", "");
+        return Arrays.stream(result).mapToObj(String::valueOf).collect(Collectors.joining());
     }
 
     public static String descramble(String scrambled) {
@@ -33,7 +34,7 @@ public final class DefaultScrambler {
                 result[i] = scrambledArr[i];
             }
         }
-        return Arrays.toString(result).replaceAll("\\[|]|,|\\s", "");
+        return Arrays.stream(result).mapToObj(String::valueOf).collect(Collectors.joining());
     }
 
     private static int[] getArr(String str) {
