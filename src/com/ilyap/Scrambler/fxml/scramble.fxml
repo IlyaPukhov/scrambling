@@ -55,7 +55,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="23.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋₄ ⊕ Bᵢ₋₅):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="169.96875">
+   <Text layoutX="23.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋&#8322;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="169.96875">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
@@ -65,7 +65,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="20.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный дескремблер (Cᵢ = Bᵢ ⊕ Bᵢ₋₄ ⊕ Bᵢ₋₅):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="74.0">
+   <Text layoutX="20.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный дескремблер (Cᵢ = Bᵢ ⊕ Bᵢ₋&#8322;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="74.0">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
