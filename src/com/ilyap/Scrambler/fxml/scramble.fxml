@@ -14,7 +14,7 @@
    <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.8" pickOnBounds="true">
       <Image url="@../assets/background.png" />
    </ImageView>
-   <TextField fx:id="sourceField" alignment="CENTER" focusTraversable="false" layoutX="55.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="690.0" styleClass="field" text="111111000000000000000000000000000000000000000011" AnchorPane.bottomAnchor="479.6" AnchorPane.rightAnchor="54.60000000000002">
+   <TextField fx:id="sourceField" alignment="CENTER" focusTraversable="false" layoutX="55.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="690.0" styleClass="field" text="111100000000000000000000000000000000000000001111" AnchorPane.bottomAnchor="479.6" AnchorPane.rightAnchor="54.60000000000002">
       <font>
          <Font name="Open Sans Regular" size="24.0" />
       </font>
@@ -55,7 +55,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="23.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋&#8322;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="169.96875">
+   <Text layoutX="23.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋&#8324; ⊕ Bᵢ₋&#8324;&#8324; ⊕ Bᵢ₋&#8324;&#8328;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="169.96875">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
@@ -65,7 +65,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="20.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный дескремблер (Cᵢ = Bᵢ ⊕ Bᵢ₋&#8322;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="74.0">
+   <Text layoutX="20.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный дескремблер (Cᵢ = Bᵢ ⊕ Bᵢ₋&#8324; ⊕ Bᵢ₋&#8324;&#8324; ⊕ Bᵢ₋&#8324;&#8328;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="74.0">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
