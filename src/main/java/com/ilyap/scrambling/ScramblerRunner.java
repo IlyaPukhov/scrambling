@@ -1,4 +1,4 @@
-package com.ilyap.Scrambler;
+package com.ilyap.scrambling;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,17 +12,18 @@ import java.util.Objects;
 
 public class ScramblerRunner extends Application {
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/scramble.fxml")));
-        primaryStage.getIcons().add(
+        stage.getIcons().add(
                 new Image(Objects.requireNonNull(getClass().getResourceAsStream("assets/icon.png"))));
-        primaryStage.setTitle("Скремблирование");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.setResizable(false);
-        primaryStage.show();
+
+        stage.setTitle("Скремблирование");
+        stage.setScene(new Scene(root));
+        stage.setResizable(false);
+        stage.show();
     }
 
     public static void main(String[] args) {
-        launch(args);
+        launch();
     }
 }

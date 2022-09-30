@@ -1,4 +1,4 @@
-package com.ilyap.Scrambler;
+package com.ilyap.scrambling;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

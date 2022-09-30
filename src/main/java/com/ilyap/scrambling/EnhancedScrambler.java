@@ -1,20 +1,23 @@
-package com.ilyap.Scrambler;
+package com.ilyap.scrambling;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public final class DefaultScrambler {
-    private DefaultScrambler() {
+public final class EnhancedScrambler {
+    private EnhancedScrambler() {
     }
 
     public static String scramble(String source) {
         int[] sourceArr = getArr(source);
         int[] result = new int[sourceArr.length];
+
         for (int i = 0; i < source.length(); i++) {
-            if (i >= 5) {
-                result[i] = sourceArr[i] ^ result[i - 3] ^ result[i - 5];
-            } else if (i >= 3) {
-                result[i] = sourceArr[i] ^ result[i - 3];
+            if (i >= 48) {
+                result[i] = sourceArr[i] ^ result[i - 4] ^ result[i - 44] ^ result[i - 48];
+            } else if (i >= 44) {
+                result[i] = sourceArr[i] ^ result[i - 4] ^ result[i - 44];
+            } else if (i >= 4) {
+                result[i] = sourceArr[i] ^ result[i - 4];
             } else {
                 result[i] = sourceArr[i];
             }
@@ -26,10 +29,12 @@ public final class DefaultScrambler {
         int[] scrambledArr = getArr(scrambled);
         int[] result = new int[scrambledArr.length];
         for (int i = 0; i < scrambled.length(); i++) {
-            if (i >= 5) {
-                result[i] = scrambledArr[i] ^ scrambledArr[i - 3] ^ scrambledArr[i - 5];
-            } else if (i >= 3) {
-                result[i] = scrambledArr[i] ^ scrambledArr[i - 3];
+            if (i >= 48) {
+                result[i] = scrambledArr[i] ^ scrambledArr[i - 4] ^ scrambledArr[i - 44] ^ scrambledArr[i - 48];
+            } else if (i >= 44) {
+                result[i] = scrambledArr[i] ^ scrambledArr[i - 4] ^ scrambledArr[i - 44];
+            } else if (i >= 4) {
+                result[i] = scrambledArr[i] ^ scrambledArr[i - 4];
             } else {
                 result[i] = scrambledArr[i];
             }
