@@ -37,8 +37,12 @@ public class ScramblingController {
 
     public void setResults(String sourceCode) {
         defaultScramblerField.setText(DefaultScrambler.scramble(sourceCode));
+        defaultScramblerField.appendText("");
         defaultDescramblerField.setText(DefaultScrambler.descramble(defaultScramblerField.getText()));
+        defaultDescramblerField.appendText("");
         enhancedScramblerField.setText(EnhancedScrambler.scramble(sourceCode));
+        enhancedScramblerField.appendText("");
         enhancedDescramblerField.setText(EnhancedScrambler.descramble(enhancedScramblerField.getText()));
+        enhancedDescramblerField.appendText("");
     }
 }
