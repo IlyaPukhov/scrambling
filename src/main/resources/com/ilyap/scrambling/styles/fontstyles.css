@@ -6,22 +6,25 @@
     src: url("../fonts/OpenSans_Regular.ttf");
 }
 
-.title {
+.title, .text {
     -fx-font-family: 'Open Sans SemiBold';
-    -fx-font-size: 36;
+    -fx-font-smoothing-type: gray;
+}
+
+.title {
+    -fx-font-size: 30;
 }
 
 .text {
-    -fx-font-family: 'Open Sans SemiBold';
     -fx-font-size: 25;
 }
 
 .field {
     -fx-font-family: 'Open Sans Regular';
     -fx-font-size: 24;
+    -fx-font-smoothing-type: gray;
 }
 
 .button {
-    -fx-font-family: 'Open Sans SemiBold';
     -fx-font-size: 26;
 }
