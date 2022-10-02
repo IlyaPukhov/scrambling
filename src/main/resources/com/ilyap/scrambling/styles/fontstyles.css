@@ -6,7 +6,7 @@
     src: url("../fonts/OpenSans_Regular.ttf");
 }
 
-.title, .text {
+.title, .text, .button {
     -fx-font-family: 'Open Sans SemiBold';
     -fx-font-smoothing-type: gray;
 }
