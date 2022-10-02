@@ -1,0 +1,27 @@
+@font-face {
+    src: url("../fonts/OpenSans_SemiBold.ttf");
+}
+
+@font-face {
+    src: url("../fonts/OpenSans_Regular.ttf");
+}
+
+.title {
+    -fx-font-family: 'Open Sans SemiBold';
+    -fx-font-size: 36;
+}
+
+.text {
+    -fx-font-family: 'Open Sans SemiBold';
+    -fx-font-size: 25;
+}
+
+.field {
+    -fx-font-family: 'Open Sans Regular';
+    -fx-font-size: 24;
+}
+
+.button {
+    -fx-font-family: 'Open Sans SemiBold';
+    -fx-font-size: 26;
+}

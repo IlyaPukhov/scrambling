@@ -14,12 +14,12 @@
    <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.8" pickOnBounds="true">
       <Image url="@../assets/background.png" />
    </ImageView>
-   <TextField fx:id="sourceField" alignment="CENTER" focusTraversable="false" layoutX="55.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="690.0" styleClass="field" text="111100000000000000000000000000000000000000001111" AnchorPane.bottomAnchor="479.6" AnchorPane.rightAnchor="54.60000000000002">
+   <TextField fx:id="sourceField" alignment="CENTER" focusTraversable="false" layoutX="55.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="690.0" styleClass="field" stylesheets="@../styles/fontstyles.css" text="111100000000000000000000000000000000000000001111" AnchorPane.bottomAnchor="479.6" AnchorPane.rightAnchor="54.60000000000002">
       <font>
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="20.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Исходный код" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="544.453125">
+   <Text layoutX="20.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Исходный код" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="544.453125">
       <font>
          <Font name="Open Sans SemiBold" size="36.0" />
       </font>
@@ -35,7 +35,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="23.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стандартный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋₃ ⊕ Bᵢ₋₅):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="361.96875">
+   <Text layoutX="23.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Стандартный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋₃ ⊕ Bᵢ₋₅):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="361.96875">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
@@ -45,7 +45,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="23.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стандартный дескремблер (Сᵢ = Bᵢ ⊕ Bᵢ₋₃ ⊕ Bᵢ₋₅): " textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="263.96875">
+   <Text layoutX="23.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Стандартный дескремблер (Сᵢ = Bᵢ ⊕ Bᵢ₋₃ ⊕ Bᵢ₋₅): " textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="263.96875">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
@@ -55,7 +55,7 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="23.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋&#8324; ⊕ Bᵢ₋&#8324;&#8324; ⊕ Bᵢ₋&#8324;&#8328;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="169.96875">
+   <Text layoutX="23.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Улучшенный скремблер (Bᵢ = Aᵢ ⊕ Bᵢ₋₄ ⊕ Bᵢ₋₄₄ ⊕ Bᵢ₋₄₈):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="169.96875">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
@@ -65,12 +65,13 @@
          <Font name="Open Sans Regular" size="24.0" />
       </font>
    </TextField>
-   <Text layoutX="20.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Улучшенный дескремблер (Cᵢ = Bᵢ ⊕ Bᵢ₋&#8324; ⊕ Bᵢ₋&#8324;&#8324; ⊕ Bᵢ₋&#8324;&#8328;):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="74.0">
+   <Text layoutX="20.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Улучшенный дескремблер (Cᵢ = Bᵢ &#8853; Bᵢ₋₄ ⊕ Bᵢ₋₄₄ ⊕ Bᵢ₋₄₈):" textAlignment="CENTER" wrappingWidth="760.0" AnchorPane.bottomAnchor="74.0">
       <font>
          <Font name="Open Sans SemiBold" size="24.0" />
       </font>
    </Text>
    <stylesheets>
       <URL value="@../styles/main.css" />
+      <URL value="@../styles/fontstyles.css" />
    </stylesheets>
 </AnchorPane>
